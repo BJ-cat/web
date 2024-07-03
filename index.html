@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>Assignment</title>
+      <link rel="stylesheet" href="index.css" id="night-mode-css">
+      <link rel="stylesheet" href="day-mode.css" id="day-mode-css" disabled>
+    
+    </head>
+    <body>
+      <div id="first-page">
+        <div class="top-navbar"> 
+          <div class="mode-change" tabindex="0" onclick="toggleTheme()" onkeydown="handleKeyPress(event, toggleTheme)">
+            <div class="toggle-circle"></div>
+            <div class="toggle-box"></div>
+          </div>
+          <a href="index.css">CSS</a>
+          <a href="sitemap.html">Sitemap</a>
+          <a href="sourcelog.html">Sourcelog</a>
+          <a href="feedback.html">Feedback</a>
+        </div>
+        <h1><b><a href="landscape.html" id="title-link">My Hometown-Hami</a></b></h1>
+        <div class="scroll">
+          <img id="arrowImage1" src="Image/arrow2.png" alt="Scroll Down" class="scroll-arrow" tabindex="0" onkeydown="handleKeyPress(event, scrollToSecondPage)">
+          <img id="arrowImage2" src="Image/arrow.png" alt="Scroll Down" class="scroll-arrow" style="display: none;" tabindex="0" onkeydown="handleKeyPress(event, scrollToSecondPage)">
+      </div>
+    </div>
+      
+      <div id="second-page">
+        <div class="content-container">
+          <a href="Hami.html" class="map-link">
+            <img src="./Image/map.png" alt="Map of Hami">
+            
+          </a>
+        <p class="description">
+                My name is Bei Jin, I was born in a small city from China, called Hami. It is a prefecture-level city in eastern Xinjiang, China. It is well known for sweet Hami melons.
+              Due to the unique weather (large temperature difference between day and night, long sunshine hours),the fruits cultivated in Hami are very sweet and delicious, such as grapes, dates, etc . 
+              At the same time, my hometown also has many long historical sites and unique natural landscapes, such as the Huiwang Mansion built thousands of years ago, and the Yadan landform with 
+              a radius of several hundred square kilometers. In addition, the tail end of the Tianshan Mountains, which stretches for hundreds of kilometers, is located northwest of Hami. In addition, 
+              the tail end of the Tianshan Mountains, which stretches for hundreds of kilometers, is located northwest of Hami.
+              On the other hand, Hami is also a multi-ethnic city. In addition to the Han people, there are also more than a dozen ethnic minorities such as Uyghurs, Hui, Mongolians, 
+              and Kazakhs.Since there are many nomadic people living in my hometown, the meat of beef and mutton is very delicious. The unique delicacies of each ethnic group also make tourists linger, 
+              such as grilled mutton skewers, grilled buns, and roasted whole lamb.
+            </p>
+
+          </div>
+
+          <div id="curator-feed-default-feed-layout">
+            <a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a>
+          </div>
+          <script type="text/javascript">
+            (function(){
+              var i,e,d=document,s="script";i=d.createElement("script");i.async=1;i.charset="UTF-8";
+              i.src="https://cdn.curator.io/published/1fb7732d-4795-4dac-8c48-2c9e553a1491.js";
+              e=d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+            })();
+          </script>
+
+
+
+            <div class="centered-link-container">
+              <button onclick="window.location.href='index.html';">Back to Home</button>
+            </div>
+          </div>
+          
+        </body>
+
+
+        <script src="action.js"></script>
+        
+
+</html>
+

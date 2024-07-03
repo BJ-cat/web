@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Feedback Form</title>
+    <link rel="stylesheet" href="feedback.css">
+</head>
+<body>
+    <h1 style="margin-bottom: 20px;">Feedback Form</h1> 
+    <form class="feedback-form" action="mailto:your-email@example.com" method="POST" enctype="text/plain">
+        <label for="name">Your name:</label>
+        <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name">
+        
+        <label for="email">Your email address:</label>
+        <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email">
+        
+        <fieldset class="radio-group">
+            <legend>What is your gender?</legend>
+            <input type="radio" id="male" name="gender" value="Male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="Female">
+            <label for="female">Female</label>
+            <input type="radio" id="other" name="gender" value="Other">
+            <label for="other">Other</label>
+            <input type="radio" id="prefer_not_to_say" name="gender" value="I prefer not to say">
+            <label for="prefer_not_to_say">I prefer not to say</label>
+        </fieldset>
+        
+        <label for="feedback">Please fill in your feedback:</label>
+        <textarea id="feedback" name="feedback" class="form-control" placeholder="Enter your feedback"></textarea>
+        
+        <button type="submit" class="submit-btn">Send it</button>
+        <button type="reset" class="clear-btn">Clear</button>
+    </form> 
+
+    <div class="centered-link-container">
+        <button onclick="window.location.href='index.html';">Back to Home</button>
+    </div>
+</body>
+</html>

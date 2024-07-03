@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+      <meta charset="utf-8">
+      <title>illustration</title>
+    
+    </head>
+    <body>
+      
+        <p class="description">
+            Html:
+            Tabindex Attribute: This attribute is used in HTML elements to make them focusable and navigable using the keyboard. Elements like div and img are not 
+            focusable by default, but adding tabindex="0" makes them accessible via the Tab key.
+            Onkeydown Attribute: This attribute is used to execute JavaScript code when a key is pressed while the element is focused. The handleKeyPress function is called 
+            in this case.
+            
+            JavaScript Functions
+            1.handleKeyPress Function:
+            Parameters: This function takes two parameters: event (which captures the keyboard event) and actionFunction (which refers to another function that should be executed).
+            Functionality: Inside handleHPeyPress, there's a check to see if the key pressed is the 'Enter' key (using event.key === 'Enter'). If so, it calls the actionFunction passed as a parameter, enabling actions to be performed by pressing Enter.
+            2.toggleTheme Function:
+            Called By: This function is called both on mouse click (onclick) and when the Enter key is pressed (provided via handleKeyPress when the element is focused).
+            Functionality: toggleTheme toggles the CSS theme between a "day" mode and a "night" mode by manipulating the DOM elements like switching CSS files and changing styles of specific elements (like the .toggle-circle).
+            3.scrollToSecondPage Function:
+            Called By: This function is triggered when the images with IDs arrowImage1 and arrow2 are clicked or when Enter is pressed while they are focused (via handleKeyPress).
+            Functionality: It scrolls to the div with ID second-page smoothly, enhancing navigation within the page.
+            
+            Event Listeners for Keyboard Interactions
+            Additional Event Listeners: Beyond the inline onkeydown handlers, the script also attaches event listeners to the arrow images for both click and keydown events, ensuring that scrollToSecondPage can be triggered by both mouse and keyboard actions.
+            This combination of HTML attributes and JavaScript ensures that users can navigate through and interact with the web page using both mouse clicks and keyboard inputs, specifically the Tab to navigate and Enter to activate certain elements. This approach is essential for accessibility, allowing users with different needs to interact with the content effectively.
+            </p>
+
+            
+        </body>
+
+
+        
+        
+
+</html>
+

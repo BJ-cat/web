@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.2)), url('./Image/photo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    height: 100vh;
+
+}
+
+.content {
+    margin-top: -80px; 
+}
+
+#myVideo {
+    width: 800px;
+    height: 500px;
+    border: 5px solid white;
+    box-shadow: 0 4qpx 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px; 
+}
+
+.video-description {
+    text-align: left;
+    max-width: 1000px; 
+    font-size: 16px;
+    color: black;
+    margin-top: 0px; 
+}
+
+.home-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.home-button a {
+    padding: 10px 20px;
+    background-color: grey;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px; 
+    text-decoration: none;
+}
+
+.home-button a:hover {
+    background-color: black;
+}

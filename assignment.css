@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+img {
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    width: 800px;
+}
+
+.centered-link-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px; 
+     
+}
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    table, .feedback-form {
+        width: 100%;
+    }
+
+    .links-row {
+        flex-direction: column; 
+        padding: 10px 0;
+    }
+}

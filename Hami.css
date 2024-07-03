@@ -1,0 +1,132 @@
+body {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+    margin: 0; 
+    background-color: rgb(85, 85, 85); /* Dark gray background */
+}
+
+.container {
+    position: relative; 
+    width: fit-content; /* Width depends on content */
+}
+
+.styled-link {
+    position: absolute;
+    border: 2px solid rgb(85, 85, 85);
+    padding: 5px 10px;
+    background-color: transparent;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    border-radius: 60%/60%; /* Rounded borders */
+}
+
+/*Pop-ups*/
+.styled-link .tooltip {
+    visibility: hidden; /* Hidden by default */
+    width: 260px;
+    background-color: grey;
+    color: white;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 100%; 
+    left: 50%;
+    margin-left: -100px; /* Center the tooltip */
+    opacity: 0; /* Start invisible for animation */
+    transition: opacity 0.3s; /* Fade-in effect */
+}
+
+.styled-link .tooltip-image {
+    width: 100%; 
+    height: auto; /* Maintain aspect ratio */
+}
+
+.styled-link .tooltip-text {
+    text-align: left; 
+    font-size: 14px; 
+    line-height: 1.2; 
+}
+
+.styled-link:hover .tooltip {
+    visibility: visible;
+    opacity: 1; /* Show tooltip on hover */
+}
+
+/* image set */
+img {
+    max-width: 100%; 
+    height: auto; 
+    animation: scaleUp 1s forwards; /* Animation for scaling up */
+}
+
+.sidebar {
+    position: fixed;
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+    left: -150px; /* Hidden by default */
+    top: 0;
+    width: 150px; 
+    height: 100%;  
+    background-color: black;  
+    overflow-x: hidden;  
+    transition: left 0.5s; /* Slide-in effect */
+    z-index: 1000;  
+}
+
+.sidebar a {
+    padding: 0; 
+    text-decoration: none;  
+    font-size: 25px;  
+    color: white; 
+    transition: color 0.3s; /* Color change on hover */
+}
+
+.sidebar a:hover {
+    color: white; 
+}
+
+.sidebar-link {
+    display: block;  
+    margin: 5px 0;  
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 22px;
+    color: white;
+    transition: color 0.3s;
+    
+}
+
+.landscape {
+    margin-top: 100px; /* Space above landscape section */
+}
+
+.food{
+    margin-top: 100px;
+
+}
+
+.culture {
+    margin-top: 100px; /* Space above culture section */
+}
+
+.home{
+    margin-top: 100px; 
+
+}
+
+/* Animation from scale 0.1 to 1 */
+@keyframes scaleUp {
+    from {
+        transform: scale(0.1); 
+        opacity: 0; /* Start invisible */
+    }
+    to {
+        transform: scale(1); 
+        opacity: 1; /* End fully visible */
+    }
+}

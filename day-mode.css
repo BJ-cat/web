@@ -1,0 +1,189 @@
+.top-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding: 10px 0;
+    z-index: 9999;
+    text-align: center;
+    background-color: rgba(255, 230, 230, 0.8); /* transparent */
+    transition: background-color 0.5s ease; 
+}
+
+.top-navbar a {
+    color: black;     
+    padding: 10px 20px; 
+    text-decoration: none; 
+}
+
+.top-navbar:hover {
+    background-color:  rgb(255, 230, 230); 
+}
+
+body, html {
+    margin: 0;
+    padding: 0; 
+    font-family: Arial, sans-serif;
+    height: 100%; 
+}
+
+/* background */
+#first-page {
+    background-image: url('Image/caoyuan.png'); /* Set your background image here */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh; /* 100% of the viewport height */
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center content vertically and horizontally */
+    padding: 0;
+}
+
+
+/* Heading */
+#first-page h1 {
+    font-size: 60px;
+    color: white; 
+    top: 10px;  
+    text-align: center;
+}
+
+/* Heading action*/
+#title-link {
+    color: white; 
+    text-decoration: none; 
+}
+
+#title-link:hover {
+    color: rgb(255, 230, 230); 
+}
+
+/* scroll */
+.scroll-arrow {
+    position: absolute;
+    top: 600px;
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center alignment fix */
+    width: 50px; /* Arrow size */
+    cursor: pointer; /* Indicates it's clickable */
+}
+
+#second-page {
+    display: flex;
+    flex-direction: column; 
+    justify-content: space-between; 
+    min-height: 100vh; 
+    padding: 20px;
+    background-color: rgb(255, 255, 255); 
+}
+
+.content-container {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    width: 100%; 
+}
+
+.map-link img {
+    width: 700px; 
+    height: auto; 
+    padding: 10px; 
+    flex: none; 
+}
+
+.description {
+    width: 500px;
+    height: 300px;
+    border-style: solid;  
+    border-width: 6px;
+    border-color: grey;
+    border-radius: 8px;    
+    padding: 10px;
+    margin-left: 20px; 
+    flex: 1; 
+    margin-top: 100px;
+    color: rgb(70, 70, 70);
+}
+
+
+/* button */
+.centered-link-container {
+    width: 100%; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px 0; 
+}
+
+.centered-link-container button {
+    color: black; 
+    background-color: lightgrey; 
+    font-size: 26px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px; 
+    box-shadow: 0px 2px 2px rgba(0,0,0,0.2);
+}
+
+/* button action*/
+.centered-link-container button:hover {
+    background-color: rgb(255, 230, 230); 
+    color: black; 
+    cursor: pointer; 
+}
+
+.centered-link-container button, .links-row a {
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out; /* Smooth transition over 0.3 seconds */
+}
+
+html {
+    scroll-behavior: smooth; /* Enable smooth scrolling for the whole page */
+}
+
+.mode-change {
+    position: relative;
+    width: 40px; /* Width of the box */
+    height: 20px; /* Height of the box */
+    background-color: lightgray; /* Background color of the box */
+    border-radius: 10px; /* Rounded corners for the box */
+    cursor: pointer;
+    margin-left: 20px; 
+    transform: translateY(10px);
+   
+}
+
+.toggle-circle {
+    position: absolute;
+    width: 18px; /* Slightly smaller than half the height of the box */
+    height: 18px;
+    background-color: black; /* Initial color */
+    border-radius: 50%; /* Round shape for the circle */
+    transition: all 0.5s ease; /* Smooth transition for moving and color change */
+    left: 1px; /* Small margin from the left */
+    top: 1px; /* Center vertically */
+}
+
+#curator-feed-default-feed-layout::before {
+    content: "Loading...";
+    color:black;
+    display: block;
+    text-align: center;
+    padding: 30px 0;
+}
+
+
+@media screen and (max-width: 768px) {
+    #second-page {
+        flex-direction: column; /* Stack elements vertically on small screens */
+    }
+
+    .description, .map-link img {
+        width: 100%; /* Each takes full width of the screen */
+        margin: 0; /* Reset margins */
+        padding: 10px 0; /* Add vertical padding for separation */
+    }
+}
+
+
